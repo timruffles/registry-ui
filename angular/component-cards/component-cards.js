@@ -14,10 +14,10 @@ angular.module('registry')
             var selectedCards = {};
 
             $scope.selectCard = function(card) {
-              selectedCards[crd.id] = true;
+              selectedCards[card.id] = true;
             }
 
-            $scope.is_selected = function(card) {
+            $scope.isSelected = function(card) {
               return selectedCards[card.id];
             };
 
