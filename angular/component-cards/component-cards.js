@@ -10,6 +10,17 @@ angular.module('registry')
             $scope.filterFn = $scope.filter.match.bind($scope.filter);
 
             $scope.hiddenCount = 0;
+
+            var selectedCards = {};
+
+            $scope.selectCard = function(cardSelcted) {
+              selectedCards[cardSelected.id] = true;   
+            }
+
+            $scope.isSelected = function(card) {
+              return selectedCards[card.id];
+            }
+
             $scope.$watch("filter", function () {
                 $scope.hiddenCount = _.countBy($scope.components, $scope.filter.match, $scope.filter)[false];
             }, true);
@@ -20,15 +31,6 @@ angular.module('registry')
             // simple ordering
             $scope.orderProp = "modified";
             $scope.orderReverse = true;
-
-            f()
-
-            x == null
-
-            [1,2,3].forEach(function() {
-              return
-              {} 
-            });
 
             $scope.setOrderProp = function(name){
                 if($scope.orderProp = name){
