@@ -13,24 +13,13 @@ angular.module('registry')
 
             var selectedCards = {};
 
-            $scope.selectCard = function(cardSelcted) {
-              selectedCards[cardSelected.id] = true;   
+            $scope.selectCard = function(card) {
+              selectedCards[crd.id] = true;
             }
 
-            $scope.isSelected = function(card) {
+            $scope.is_selected = function(card) {
               return selectedCards[card.id];
-            }
-
-            $scope.$watch("filter", function () {
-                $scope.hiddenCount = _.countBy($scope.components, $scope.filter.match, $scope.filter)[false];
-            }, true);
-
-            $scope.notDisplayedInColumn = $scope.filter.notDisplayedInColumn;
-
-            // TODO: move me to a global place
-            // simple ordering
-            $scope.orderProp = "modified";
-            $scope.orderReverse = true;
+            };
 
             $scope.setOrderProp = function(name){
                 if($scope.orderProp = name){

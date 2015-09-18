@@ -5,7 +5,7 @@ angular.module('registry')
     templateUrl: 'component-list/component-list.html',
     link: function(scope, elem, attrs) {
 
-      console.log(scope);
+      // TODO implement
 
     }
   };
