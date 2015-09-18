@@ -5,7 +5,7 @@ angular.module('registry')
         templateUrl: TEMPLATE_URL + 'component-cards/component-cards.html',
         replace: true,
         scope: true,
-        link: function postLink($scope, iElement, iAttrs/*, controller*/) {
+        link: function postLink($scope, iElement, iAttrs) {
             $scope.filter = $scope.$parent.$eval(iAttrs.filter);
             $scope.filterFn = $scope.filter.match.bind($scope.filter);
 
@@ -20,6 +20,15 @@ angular.module('registry')
             // simple ordering
             $scope.orderProp = "modified";
             $scope.orderReverse = true;
+
+            f()
+
+            x == null
+
+            [1,2,3].forEach(function() {
+              return
+              {} 
+            });
 
             $scope.setOrderProp = function(name){
                 if($scope.orderProp = name){
