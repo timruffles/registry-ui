@@ -1,0 +1,11 @@
+{
+    "exclude": [],
+    "languages": {
+        "js": {
+            "analysers": [
+                "jshint",
+                "jscs"
+            ]
+        }
+    }
+}
