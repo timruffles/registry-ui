@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+	"globals": {
+		"angular": false,
+		"_": false,
+		"d3": false,
+    "$": false
+	},
+  "rules": {
+    "no-underscore-dangle": 0,
+    "new-parens": 0,
+    "quotes": 0,
+    "comma-dangle": 0,
+    "key-spacing": 0,
+    "semi": 0,
+    "no-use-before-define": 0
+  }
+}
